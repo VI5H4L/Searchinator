@@ -1,29 +1,3 @@
-// function searchClipboard() {
-//   var input = document.createElement('textarea');
-//   document.body.appendChild(input);
-//   input.focus();
-//   document.execCommand('paste');
-//   var text = input.value;
-//   document.body.removeChild(input);
-//   if (text.trim() === '') {
-//     var searchResults = document.getElementById("searchResults");
-//     searchResults.innerHTML = '<p>No recent clipboard content found.</p>';
-//   } else {
-//     var query = encodeURIComponent(text.trim());
-//     var url = 'https://www.google.com/search?q=' + query;
-
-//     url="https://www.geeksforgeeks.org/";
-//     var searchResults = document.getElementById("searchResults");
-//     alert(url);
-//     searchResults.innerHTML = '<iframe src='+url+' width="100%" height="500"></iframe>';
-//   }
-// }
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   searchClipboard();
-// });
-
-
 const apiKey = 'AIzaSyBirLEy-tOSBjdBXzzauVfXjaBcRif-H5w';
 const cx = 'b0c08a733e05545c1';
 const searchUrl = 'https://www.googleapis.com/customsearch/v1';
@@ -57,7 +31,7 @@ function displaySearchResults(results) {
       var result = results[i];
       var title = result.title;
       var link = result.link;
-      searchResults.innerHTML += `<a href="${link}" target="_blank">${title}</a><br>`;
+      searchResults.innerHTML += `<a class="link" href="${link}" target="_blank">&#8227; ${title}</a><br>`;
     }
   }
 }
@@ -65,4 +39,8 @@ function displaySearchResults(results) {
 document.addEventListener("DOMContentLoaded", function () {
   var searchButton = document.getElementById("searchButton");
   searchButton.addEventListener("click", searchClipboard);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  searchClipboard();
 });

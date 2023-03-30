@@ -6,11 +6,13 @@
   "permissions": [
     "activeTab",
     "scripting",
-    "clipboardRead",
-    "https://www.googleapis.com/*"
+    "clipboardRead"
   ],
+  "icons": {
+    "96": "icon1.png"
+  },
   "action": {
     "default_popup": "popup.html",
-    "icon": "icon.png"
+    "icon": "icon1.png"
   }
 }

@@ -1,6 +1,52 @@
-.main{
-    background-color: black;
+body {
+    background-color: #2d2d2d;
+    font-family: 'Lexend', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    width: 490px;
+    max-height: 450px;
+    overflow-y: scroll;
+  }
+
+  .heading {
+    font-size: 24px;
+    margin: 0 0 5px;
+  }
+
+  hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid #5b5b5b;
+  }
+
+  .searchbtn {
+    padding: 10px 20px;
+    font-family: 'Lexend', sans-serif;
+    background-color: #ff2d55;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .searchbtn:hover {
+    background-color: #c70039;
+  }
+
+  #searchResults {
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  .link {
+    color: #f99090;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .link:hover {
     color: white;
-    width: 200px;
-    height: 200px;
-}
+  }

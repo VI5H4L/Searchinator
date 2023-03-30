@@ -2,63 +2,19 @@
 <html>
   <head>
     <title>Searchinator</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
-    <style>
-      body {
-        background-color: #2d2d2d;
-        font-family: 'Lexend', sans-serif;
-        font-size: 14px;
-        color: #fff;
-        text-align: center;
-        width: 450px;
-        max-height: 450px;
-        overflow-y: scroll;
-      }
-
-      h1 {
-        font-size: 24px;
-        margin: 0 0 20px;
-      }
-
-      button {
-        padding: 10px 20px;
-        font-family: 'Lexend', sans-serif;
-        background-color: #ff2d55;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        font-size: 16px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-      }
-
-      button:hover {
-        background-color: #c70039;
-      }
-
-      #searchResults {
-        margin-top: 20px;
-      }
-
-      a {
-        color: #0078d7;
-        text-decoration: none;
-        transition: color 0.3s;
-      }
-
-      a:hover {
-        color: #4d4d4d;
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="popup.css">
   </head>
   <body>
-    <h1>Searchinator</h1>
+    <h1 class="heading">Searchinator</h1>
     <p>Click the button below to search recent clipboard content on Google:</p>
-    <button id="searchButton">Searchinate!</button>
+    <button id="searchButton" class="searchbtn">Searchinate!</button>
     <div id="searchResults"></div>
     <script src="popup.js"></script>
-    
   </body>
 </html>
