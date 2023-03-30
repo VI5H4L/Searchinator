@@ -24,7 +24,7 @@ function searchClipboard() {
 function displaySearchResults(results) {
   var searchResults = document.getElementById("searchResults");
   searchResults.innerHTML = '';
-  if (results.length === 0) {
+  if (!results) {
     searchResults.innerHTML = '<p>No search results found.</p>';
   } else {
     for (var i = 0; i < results.length; i++) {
