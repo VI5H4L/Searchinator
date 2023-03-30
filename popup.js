@@ -36,6 +36,7 @@ function displaySearchResults(results) {
   }
 }
 
+
 document.addEventListener("DOMContentLoaded", function () {
   var searchButton = document.getElementById("searchButton");
   searchButton.addEventListener("click", searchClipboard);
