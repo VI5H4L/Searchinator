@@ -9,8 +9,12 @@ EXTENSION: Need to search something funky and reinvent searching? The Searchinat
 # Installation in Chrome
 Step 1. Download ZIP of Searchinator from drop down arrow under Code and extract it(remember location).
 ![info2](https://user-images.githubusercontent.com/107054166/228829061-fbac9d0f-10b5-4f21-af94-4cd26303e250.png)
+
 Step 2. Go to chrome://extensions/
+
 Step 3. Turn Developer mode on
+
 Step 4. Click "Load Unpacked"
 ![info](https://user-images.githubusercontent.com/107054166/228828756-dd13731f-045e-448a-a86b-919b8258e5ae.png)
+
 Step 5. Select Extracted folder from (Step 1) and its done.
